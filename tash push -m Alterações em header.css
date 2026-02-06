@@ -1,0 +1,56 @@
+[1mdiff --git a/css/header.css b/css/header.css[m
+[1mindex 5eb2c41..932a222 100644[m
+[1m--- a/css/header.css[m
+[1m+++ b/css/header.css[m
+[36m@@ -1,12 +1,22 @@[m
+[31m-header {[m
+[31m-  width: 100%;[m
+[31m-  height: 138px;[m
+[32m+[m[32mheader {[m[41m  [m
+   background-color: var(--background-tertiary-color);[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  flex-direction: row;[m
+[32m+[m[32m  justify-content: space-between;[m
+[32m+[m[32m  align-items: flex-start;[m
+[32m+[m[32m  padding: 37px 48px;[m
+ }[m
+ [m
+ .logo {[m
+   display: inline-block;[m
+   width: 68px;[m
+[31m-  height: 64px;[m
+[31m-  margin: 37px 0 0 48px;[m
+[32m+[m[32m  height: 64px;[m[41m [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.navigation-menu{[m
+[32m+[m[32m  margin-top: 24px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mnav{[m
+[32m+[m[32m  display: none;[m
+ }[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex b6d346c..c999f9a 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -12,15 +12,16 @@[m
+     <a class="logo" href="index.html" title="voltar para a página inicial">[m
+     <img src="img/bussola-jornada-branca.png" alt= "Bussola do logo Jornada Viagens na cor branca">[m
+     </a>[m
+[31m-    <img src="img/menu.png" alt="menu de navegacao"> [m
+[32m+[m[32m    <div class="navigation-menu">[m
+[32m+[m[32m      <img src="img/menu.png" alt="menu de navegacao">[m[41m [m
+     <nav>[m
+       <ul>[m
+         <li><a href="blog.html" target= "_blank" title="Acessar Blog">Blog</a></li>[m
+         <li><a href="pacotes.html" target= "_blank" title="Acessar Pacotes de viagem">Pacotes de viagem</a></li>[m
+         <li><a href="contatos.html" target= "_blank" title="Acessar contatos">Contato</a></li>[m
+       </ul>[m
+[31m-[m
+[31m-    </nav> [m
+[32m+[m[32m    </nav>[m
+[32m+[m[32m    </div>[m[41m [m
+   </header>    [m
+ </body>[m
+ </html>[m
